@@ -1,11 +1,9 @@
 describe('checkOut a product', () => {
   beforeEach(() => {    
-    cy.viewport('iphone-8')
-    cy.visit('https://clickandcollect-324914.firebaseapp.com/home')
+    cy.homePageVerification()
   })
 
   it('add a product to cart', () => {
-    cy.homePageVerification()
     cy.get(':nth-child(1) > .mat-mdc-card-actions > .mdc-fab > .mat-mdc-button-touch-target').click({force: true})
     cy.contains('Select Size').click()
     cy.contains(' 38 ').click()
