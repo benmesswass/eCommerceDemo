@@ -12,7 +12,7 @@
 // -- This is a parent command --
 Cypress.Commands.add("onboardingPageVerification", () => {
   cy.viewport('iphone-8')
-  cy.visit('https://clickandcollect-324914.firebaseapp.com/home')
+  cy.visit('/')
   cy.get(':nth-child(1) > img').should('be.visible')
   cy.get(':nth-child(2) > img').should('be.visible')
   cy.get(':nth-child(3) > .circle').should('have.text', "1")
