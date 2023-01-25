@@ -10,7 +10,7 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add("homePageVerification", () => {
+Cypress.Commands.add("onboardingPageVerification", () => {
   cy.viewport('iphone-8')
   cy.visit('https://clickandcollect-324914.firebaseapp.com/home')
   cy.get(':nth-child(1) > img').should('be.visible')
@@ -44,6 +44,42 @@ Cypress.Commands.add("homePageVerification", () => {
   cy.url().should('eq', 'https://clickandcollect-324914.firebaseapp.com/home')
 })
 
+Cypress.Commands.add("addProductToCard", () => {
+  cy.get(':nth-child(1) > .mat-mdc-card-actions > .mdc-fab > .mat-mdc-button-touch-target').click({ force: true })
+  cy.contains('Select Size').click()
+  cy.contains(' 38 ').click()
+  cy.contains('Add to cart').click()
+  cy.get('body').click(0, 0)
+  cy.get('.mat-mdc-simple-snack-bar > .mat-mdc-snack-bar-label').should("be.visible")
+  cy.get('[routerlink="/shoppingcart"] > .mat-mdc-button-touch-target').click()
+  cy.get('.checkout-button').click()
+})
+
+Cypress.Commands.add("confirmCard", () => {
+  cy.contains('Home delivery').click()
+  cy.contains("Name").type('admin')
+  cy.contains('Email').type('admin')
+  cy.contains('Phone').type('admin')
+  cy.contains('Address').type('admin')
+  cy.contains('Next').click()
+  cy.contains('Visa').click()
+  cy.contains('Next').click({ force: true })
+  cy.contains('Confirm').click()
+})
+
+Cypress.Commands.add("clickAndCollectButtonVerification", () => {
+  cy.contains('Click And Collect').should('be.visible')
+  cy.contains('|').should('be.visible')
+  cy.contains('FAQ').should('be.visible')
+})
+
+Cypress.Commands.add("headerSectionVerification", () => {
+  cy.get('.mobile-header > :nth-child(1) > .mdc-button > .mdc-button__label > img').should('be.visible')
+  cy.contains('where_to_vote').should('be.visible')
+  cy.contains('person_outline').should('be.visible')
+  cy.contains('favorite_border').should('be.visible')
+  cy.contains('shopping_bag').should('be.visible')
+})
 //
 //
 // -- This is a child command --
