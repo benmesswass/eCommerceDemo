@@ -80,6 +80,11 @@ Cypress.Commands.add("headerSectionVerification", () => {
   cy.contains('favorite_border').should('be.visible')
   cy.contains('shopping_bag').should('be.visible')
 })
+Cypress.Commands.add("goToLoginPage", () => {
+  cy.get('.mat-mdc-menu-trigger.mdc-icon-button.mat-mdc-icon-button.mat-unthemed.mat-mdc-button-base').click()
+  cy.contains('login').click()
+})
+
 //
 //
 // -- This is a child command --

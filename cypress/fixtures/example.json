@@ -16,5 +16,9 @@
     "179€add",
     "201€add",
     "199€add"
-  ]
+  ],
+  "wrongEmail": "wrongEmail@gmail.com",
+  "correctEmail": "admin@gmail.com",
+  "wrongPassword": "wrongPassword",
+  "correctPassword": "admin"
 }
