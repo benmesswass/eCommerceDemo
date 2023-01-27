@@ -1,10 +1,20 @@
 {
-  "expectedTextList": [ "NIKE PEGASUS TRAIL 3", 
-                        "ADIDAS ULTRABOOST 21",
-                        "NEW BALANCE RC ELITE V2",
-                        "ADIDAS ULTRABOOST 21",
-                        "NIKE JOYRIDE RUN FLYKNIT",
-                        "NIKE JOYRIDE RUN FLYKNIT",
-                        "NEW BALANCE TC V1"
-                        ]             
+  "expectedProductsTextList": [
+    "NIKE PEGASUS TRAIL 3",
+    "ADIDAS ULTRABOOST 21",
+    "NEW BALANCE RC ELITE V2",
+    "ADIDAS ULTRABOOST 21",
+    "NIKE JOYRIDE RUN FLYKNIT",
+    "NIKE JOYRIDE RUN FLYKNIT",
+    "NEW BALANCE TC V1"
+  ],
+  "expectedPricesList": [
+    "129€add",
+    "131€add",
+    "229€add",
+    "169€add",
+    "179€add",
+    "201€add",
+    "199€add"
+  ]
 }
