@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://clickandcollect-324914.firebaseapp.com/home",
+    "env": {
+        "name": "clickandcollect"
+    }
+}
