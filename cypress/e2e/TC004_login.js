@@ -39,7 +39,10 @@ describe('login', () => {
       cy.get('#email').type(example.correctEmail)
       cy.get('#password').type(example.correctPassword)
       cy.contains('Login').click()
-      //cy.get('.mdc-circular-progress__indeterminate-circle-graphic.ng-star-inserted').should('not.be.visible')
+      cy.get('.mat-mdc-menu-trigger.mdc-icon-button.mat-mdc-icon-button.mat-unthemed.mat-mdc-button-base').click()
+      cy.get('.rounded-circle').should('be.visible')
+      cy.get('.mb-0').eq(0).should('have.text',example.username)
+      cy.get('.mb-0').eq(1).should('have.text',example.correctEmail)
     })
   })
 

@@ -20,5 +20,6 @@
   "wrongEmail": "wrongEmail@gmail.com",
   "correctEmail": "admin@gmail.com",
   "wrongPassword": "wrongPassword",
-  "correctPassword": "admin"
+  "correctPassword": "admin",
+  "username": "admin"
 }
