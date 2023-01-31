@@ -10,9 +10,12 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add("onboardingPageVerification", () => {
+Cypress.Commands.add("goToOnboardingPage", () => {
   cy.viewport('iphone-8')
   cy.visit('/')
+})
+
+Cypress.Commands.add("onboardingPageElementsCheck", () => {
   cy.get(':nth-child(1) > img').should('be.visible')
   cy.get(':nth-child(2) > img').should('be.visible')
   cy.get(':nth-child(3) > .circle').should('have.text', "1")
@@ -40,6 +43,11 @@ Cypress.Commands.add("onboardingPageVerification", () => {
   cy.get(':nth-child(16) > h2').should('have.text', "Enjoy")
   cy.get(':nth-child(16) > p').should('have.text', "Enjoy your product.")
   cy.get('.mdc-button__label').should('have.text', "Continue")
+})
+
+Cypress.Commands.add("onboardingPageVerification", () => {
+  cy.goToOnboardingPage()
+  cy.onboardingPageElementsCheck()
   cy.get('.mdc-button__label').click()
   cy.url().should('eq', 'https://clickandcollect-324914.firebaseapp.com/home')
 })

@@ -1,6 +1,6 @@
 Feature: Login Page
 
-    Scenario Outline: Scenario Outline name: login using wrong credentials
+    Scenario Outline: login using wrong credentials
         Given I am on the home page
         And I access the login page
         When I enter a username <email>
