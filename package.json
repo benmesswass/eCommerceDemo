@@ -5,13 +5,28 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "triggerAllTests-staging":"npx cypress run --env configFile=staging"
+    "triggerAllTests-headed-staging": "npx cypress run --headed --env configFile=staging",
+    "triggerAllTests-chrome-staging": "npx cypress run --browser chrome --env configFile=staging",
+    "triggerAllTests-dashboard-staging": "npx cypress run --env configFile=staging --record --key=743902fe-4666-4313-b5eb-da725fd97d37",
+    "triggerAllTests-staging": "npx cypress run --env configFile=staging",
+    "junit-merge": "npx junit-merge -d cypress/results/junit/ -o cypress/results/junit/results.xml",
+    "delete-junit-report": "rm -rf cypress/results/junit/results.xml",
+    "delete-results": "rm -rf cypress/results/*  || true",
+    "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawsomeFinal.json && npx marge mochawsomeFinal.json",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/* || true"
+
+
   },
   "author": "wassim BEN MESSAOUD",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.3.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress": "^12.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-multi-reporters": "^1.6.2",
+    "mocha-junit-reporter": "^2.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,

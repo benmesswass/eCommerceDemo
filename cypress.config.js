@@ -7,7 +7,7 @@ const cucumber = require('cypress-cucumber-preprocessor').default
 function getConfigurationByFile(file) {
   const pathToConfigFile = path.resolve('cypress/config', `${file}.json`);
 
-  if(!fs.existsSync(pathToConfigFile)) {
+  if (!fs.existsSync(pathToConfigFile)) {
     console.log("No custom config file found.");
     return {};
   }
@@ -26,16 +26,23 @@ module.exports = defineConfig({
 
       return getConfigurationByFile(file)
     },
+    screenshotsFolder: 'cypress/screenshots',
     retries: {
       runMode: 0,
       openMode: 1
     },
-    env: {
-      homePage: "https://clickandcollect-324914.firebaseapp.com/home",
-      first_name: "Wass"
-    },
-    specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
     screenshotOnRunFailure: true,
-    trashAssetsBeforeRuns: true
-  },
-});
+    trashAssetsBeforeRuns: true,
+    // viewportHeight: ,
+    // viewportWidth: ,
+    reporter: 'cypress-multi-reporters',
+    reporterOptions: {
+      configFile: 'reporter-config.json'
+    },
+      env: {
+        homePage: "https://clickandcollect-324914.firebaseapp.com/home",
+        first_name: "Wass"
+      },
+      specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}"
+    },
+  });

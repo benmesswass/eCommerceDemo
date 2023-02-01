@@ -1,0 +1,607 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 12,
+    "passes": 8,
+    "pending": 0,
+    "failures": 4,
+    "start": "2023-02-01T12:02:26.744Z",
+    "end": "2023-02-01T12:03:12.110Z",
+    "duration": 40454,
+    "testsRegistered": 12,
+    "passPercent": 66.66666666666667,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ec97ed1e-7fc9-4a2f-b58f-84ed875a24ee",
+      "title": "",
+      "fullFile": "cypress/e2e/features/TC001_login.feature",
+      "file": "cypress/e2e/features/TC001_login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f25e8de3-c668-4bed-af8e-97d14d13c484",
+          "title": "Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login using wrong credentials (example #1)",
+              "fullTitle": "Login Page login using wrong credentials (example #1)",
+              "timedOut": null,
+              "duration": 2690,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "eadd6403-8254-4a6c-88f5-7d630d8f3852",
+              "parentUUID": "f25e8de3-c668-4bed-af8e-97d14d13c484",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login using wrong credentials (example #2)",
+              "fullTitle": "Login Page login using wrong credentials (example #2)",
+              "timedOut": null,
+              "duration": 1685,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0ece0d09-6050-4b81-a996-097c115e5f5a",
+              "parentUUID": "f25e8de3-c668-4bed-af8e-97d14d13c484",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login using correct credentials (example #1)",
+              "fullTitle": "Login Page login using correct credentials (example #1)",
+              "timedOut": null,
+              "duration": 5739,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.rounded-circle`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.rounded-circle`, but never found it.\n    at Context.eval (cypress/support/step_definitions/TC001_login-steps.js:31:30)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "d484ea25-99c7-4fc7-b976-6b7804efd4ce",
+              "parentUUID": "f25e8de3-c668-4bed-af8e-97d14d13c484",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eadd6403-8254-4a6c-88f5-7d630d8f3852",
+            "0ece0d09-6050-4b81-a996-097c115e5f5a"
+          ],
+          "failures": [
+            "d484ea25-99c7-4fc7-b976-6b7804efd4ce"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10114,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "54c5aa86-3ae1-4692-a29c-ee5a2cdfe323",
+      "title": "",
+      "fullFile": "cypress/e2e/features/TC002_onboardingPage.feature",
+      "file": "cypress/e2e/features/TC002_onboardingPage.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "54a5a832-51e9-4ef8-ba4f-1b2dbb083a39",
+          "title": "Onboarding Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Onboarding Page Verification",
+              "fullTitle": "Onboarding Page Onboarding Page Verification",
+              "timedOut": null,
+              "duration": 907,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "cabfd2b9-fe42-42ba-b527-ab009b6de06f",
+              "parentUUID": "54a5a832-51e9-4ef8-ba4f-1b2dbb083a39",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cabfd2b9-fe42-42ba-b527-ab009b6de06f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 907,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "56ea3f40-03e9-4c17-b663-a225e896adb8",
+      "title": "",
+      "fullFile": "cypress/e2e/features/TC003_checkout.feature",
+      "file": "cypress/e2e/features/TC003_checkout.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab660fb8-4c12-4038-83ff-6196f05b21bd",
+          "title": "checkout Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "checkout a product",
+              "fullTitle": "checkout Test checkout a product",
+              "timedOut": null,
+              "duration": 7204,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<body>...</body>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<body>...</body>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130233:74)\n    at ensureDescendents (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130269:5)\n    at ensureDescendentsAndScroll (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130275:14)\n    at ensureElIsNotCovered (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130406:5)\n    at runAllChecks (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130586:52)\n    at retryActionability (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130623:16)\n    at tryCatcher (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise.attempt.Promise.try (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6188:29)\n    at whenStable (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:146724:65)\n    at <unknown> (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:146165:14)\n    at tryCatcher (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:7031:18)\n    at Promise._fulfill (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6975:18)\n    at <unknown> (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:8589:46)\nFrom Your Spec Code:\n    at Context.eval (cypress/support/step_definitions/TC003_checkout-steps.js:18:19)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "0f6bc55c-14c5-413f-b458-f7fa7c2f4f4f",
+              "parentUUID": "ab660fb8-4c12-4038-83ff-6196f05b21bd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0f6bc55c-14c5-413f-b458-f7fa7c2f4f4f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7204,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "53022012-1e81-43d6-932b-880f598e42b4",
+      "title": "",
+      "fullFile": "cypress/e2e/features/TC004_homePage.feature",
+      "file": "cypress/e2e/features/TC004_homePage.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "45ff99cb-efde-4af0-9f3a-8fc101f6f323",
+          "title": "Onboarding Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Onboarding Page Verification",
+              "fullTitle": "Onboarding Page Onboarding Page Verification",
+              "timedOut": null,
+              "duration": 2002,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "653c3f58-006b-4959-9ca2-eb250e21b685",
+              "parentUUID": "45ff99cb-efde-4af0-9f3a-8fc101f6f323",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "653c3f58-006b-4959-9ca2-eb250e21b685"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2002,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ec97ed1e-7fc9-4a2f-b58f-84ed875a24ee",
+      "title": "",
+      "fullFile": "cypress/e2e/features/TC001_login.feature",
+      "file": "cypress/e2e/features/TC001_login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f25e8de3-c668-4bed-af8e-97d14d13c484",
+          "title": "Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login using wrong credentials (example #1)",
+              "fullTitle": "Login Page login using wrong credentials (example #1)",
+              "timedOut": null,
+              "duration": 2690,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "eadd6403-8254-4a6c-88f5-7d630d8f3852",
+              "parentUUID": "f25e8de3-c668-4bed-af8e-97d14d13c484",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login using wrong credentials (example #2)",
+              "fullTitle": "Login Page login using wrong credentials (example #2)",
+              "timedOut": null,
+              "duration": 1685,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "0ece0d09-6050-4b81-a996-097c115e5f5a",
+              "parentUUID": "f25e8de3-c668-4bed-af8e-97d14d13c484",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login using correct credentials (example #1)",
+              "fullTitle": "Login Page login using correct credentials (example #1)",
+              "timedOut": null,
+              "duration": 5739,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.rounded-circle`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.rounded-circle`, but never found it.\n    at Context.eval (cypress/support/step_definitions/TC001_login-steps.js:31:30)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "d484ea25-99c7-4fc7-b976-6b7804efd4ce",
+              "parentUUID": "f25e8de3-c668-4bed-af8e-97d14d13c484",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eadd6403-8254-4a6c-88f5-7d630d8f3852",
+            "0ece0d09-6050-4b81-a996-097c115e5f5a"
+          ],
+          "failures": [
+            "d484ea25-99c7-4fc7-b976-6b7804efd4ce"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10114,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "54c5aa86-3ae1-4692-a29c-ee5a2cdfe323",
+      "title": "",
+      "fullFile": "cypress/e2e/features/TC002_onboardingPage.feature",
+      "file": "cypress/e2e/features/TC002_onboardingPage.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "54a5a832-51e9-4ef8-ba4f-1b2dbb083a39",
+          "title": "Onboarding Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Onboarding Page Verification",
+              "fullTitle": "Onboarding Page Onboarding Page Verification",
+              "timedOut": null,
+              "duration": 907,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "cabfd2b9-fe42-42ba-b527-ab009b6de06f",
+              "parentUUID": "54a5a832-51e9-4ef8-ba4f-1b2dbb083a39",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cabfd2b9-fe42-42ba-b527-ab009b6de06f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 907,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "56ea3f40-03e9-4c17-b663-a225e896adb8",
+      "title": "",
+      "fullFile": "cypress/e2e/features/TC003_checkout.feature",
+      "file": "cypress/e2e/features/TC003_checkout.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab660fb8-4c12-4038-83ff-6196f05b21bd",
+          "title": "checkout Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "checkout a product",
+              "fullTitle": "checkout Test checkout a product",
+              "timedOut": null,
+              "duration": 7204,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<body>...</body>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<body>...</body>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130233:74)\n    at ensureDescendents (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130269:5)\n    at ensureDescendentsAndScroll (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130275:14)\n    at ensureElIsNotCovered (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130406:5)\n    at runAllChecks (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130586:52)\n    at retryActionability (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:130623:16)\n    at tryCatcher (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise.attempt.Promise.try (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6188:29)\n    at whenStable (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:146724:65)\n    at <unknown> (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:146165:14)\n    at tryCatcher (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:7031:18)\n    at Promise._fulfill (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:6975:18)\n    at <unknown> (https://clickandcollect-324914.firebaseapp.com/__cypress/runner/cypress_runner.js:8589:46)\nFrom Your Spec Code:\n    at Context.eval (cypress/support/step_definitions/TC003_checkout-steps.js:18:19)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "0f6bc55c-14c5-413f-b458-f7fa7c2f4f4f",
+              "parentUUID": "ab660fb8-4c12-4038-83ff-6196f05b21bd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0f6bc55c-14c5-413f-b458-f7fa7c2f4f4f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7204,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "53022012-1e81-43d6-932b-880f598e42b4",
+      "title": "",
+      "fullFile": "cypress/e2e/features/TC004_homePage.feature",
+      "file": "cypress/e2e/features/TC004_homePage.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "45ff99cb-efde-4af0-9f3a-8fc101f6f323",
+          "title": "Onboarding Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Onboarding Page Verification",
+              "fullTitle": "Onboarding Page Onboarding Page Verification",
+              "timedOut": null,
+              "duration": 2002,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "653c3f58-006b-4959-9ca2-eb250e21b685",
+              "parentUUID": "45ff99cb-efde-4af0-9f3a-8fc101f6f323",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "653c3f58-006b-4959-9ca2-eb250e21b685"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2002,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
