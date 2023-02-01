@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "triggerAllTests-headed-staging": "npx cypress run --headed --env configFile=staging",
     "triggerAllTests-chrome-staging": "npx cypress run --browser chrome --env configFile=staging",
+    "triggerAllTests-electron-headed-staging": "npx cypress run --browser electron --headed --env configFile=staging",
+    "triggerAllTests-chrome-headed-staging": "npx cypress run --browser chrome --headed --env configFile=staging",
     "triggerAllTests-dashboard-staging": "npx cypress run --env configFile=staging --record --key=743902fe-4666-4313-b5eb-da725fd97d37",
     "triggerAllTests-staging": "npx cypress run --env configFile=staging",
     "junit-merge": "npx junit-merge -d cypress/results/junit/ -o cypress/results/junit/results.xml",
