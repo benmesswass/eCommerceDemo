@@ -1,4 +1,5 @@
 Getting Started with clickandcollect Cypress Testing
+
 This project is for Cypress testing of the eCommerce website called clickandcollect. In this guide, we'll explain how to correctly use the project and run the tests.
 
 Prerequisites
