@@ -1,6 +1,3 @@
 {
-    "baseUrl": "https://clickandcollect-324914.firebaseapp.com/home",
-    "env": {
-        "name": "clickandcollect"
-    }
+    "baseUrl": "https://staging.clickandcollect-324914.firebaseapp.com/home"
 }

@@ -18,12 +18,12 @@ function getConfigurationByFile(file) {
 module.exports = defineConfig({
   projectId: "d9fkzi",
   e2e: {
+    baseUrl: "https://clickandcollect-324914.firebaseapp.com/home",
     setupNodeEvents(on, config) {
       // implement node event listeners here
       on('file:preprocessor', cucumber())
 
       const file = config.env.configFile || ''
-
       return getConfigurationByFile(file)
     },
     screenshotsFolder: 'cypress/screenshots',
@@ -39,10 +39,6 @@ module.exports = defineConfig({
     reporterOptions: {
       configFile: 'reporter-config.json'
     },
-      env: {
-        homePage: "https://clickandcollect-324914.firebaseapp.com/home",
-        first_name: "Wass"
-      },
-      specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}"
+    specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}"
     },
   });
